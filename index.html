@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Angular-fotorama by sufiiiyan</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Angular-fotorama</h1>
+        <h2>Directive for fotorama</h2>
+        <a href="https://github.com/sufiiiyan/angular-fotorama" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="angular-fotorama" class="anchor" href="#angular-fotorama" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>angular-fotorama</h1>
+
+<p>Directive for fotorama</p>
+
+<h1>
+<a id="angular-fotorama-for-showing-image-and-videossample-video-youtube-video-vimeo-video-all-in-one" class="anchor" href="#angular-fotorama-for-showing-image-and-videossample-video-youtube-video-vimeo-video-all-in-one" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Angular Fotorama for showing image and videos(sample video, youtube video, vimeo video) all in one</h1>
+
+<p>Angular-fotorama  <a href="http://sufiiiyan.github.io/Angular-fotorama/">Demo</a> </p>
+
+<h2>
+<a id="note-see-format-of-data-that-should-be-provided-in-controller" class="anchor" href="#note-see-format-of-data-that-should-be-provided-in-controller" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Note: see format of data that should be provided in controller</h2>
+
+<h4>
+<a id="add-in-your-file" class="anchor" href="#add-in-your-file" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Add in your file</strong>
+</h4>
+
+<pre><code>cdn links
+&lt;link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"&gt; 
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"&gt;&lt;/script&gt;
+
+Or can use bowercomponents links
+&lt;link rel="stylesheet" href="bower_components/fotorama/fotorama.css"&gt;
+&lt;script src="bower_components/fotorama/fotorama.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<h4>
+<a id="add-dependency-in-your-module" class="anchor" href="#add-dependency-in-your-module" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Add dependency in your module</strong>
+</h4>
+
+<pre><code>var app=angular.module("you app name",['angular-fotorama'])
+</code></pre>
+
+<h4>
+<a id="in-controller" class="anchor" href="#in-controller" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>In controller</strong>
+</h4>
+
+<pre><code>//provide thumb image to show as poster/thumb
+    $scope.fotoArray = [
+        {
+            "url": "http://s.fotorama.io/1.jpg",
+            "caption": "Hello",
+            "type": "image"
+},
+        {
+            "url": "https://clips.vorwaerts-gmbh.de/VfE_html5.mp4",
+            "thumb": "",
+            "caption": "Thumb should be provided",
+            "type": "video"
+},
+        {
+            "url": "http://s.fotorama.io/2.jpg",
+            "caption": "",
+            "type": "image"
+},
+        {
+            "url": "https://youtu.be/C0DPdy98e4c",
+            "thumb": "",
+            "caption": "",
+            "type": "video"
+},{
+            "url": "https://vimeo.com/78961286",
+            "thumb": "",
+            "caption": "",
+            "type": "video"
+}];
+</code></pre>
+
+<h4>
+<a id="using-directive" class="anchor" href="#using-directive" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Using directive</strong>
+</h4>
+
+<pre><code>&lt;div data-auto="false" fotorama item="fotoArray" class="fotorama" data-allowfullscreen="true" data-arrows="true" data-width="100%" data-ratio="800/600" data-minwidth="400" data-maxwidth="1000" data-minheight="300" data-maxheight="100%"&gt;
+
+more customization options at http://fotorama.io/customize/
+</code></pre>
+
+<hr>
+
+<h3>
+<a id="copyright" class="anchor" href="#copyright" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Copyright</h3>
+
+<p>Copyright (c) 2015-2016 (Sufiyan Momin)</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>Use this guide. Attributions are appreciated.</p>
+
+<h3>
+<a id="the-mit-license" class="anchor" href="#the-mit-license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(The MIT License)</h3>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/sufiiiyan/angular-fotorama/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/sufiiiyan/angular-fotorama/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/sufiiiyan/angular-fotorama"></a> is maintained by <a href="https://github.com/sufiiiyan">sufiiiyan</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
