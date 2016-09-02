@@ -2,7 +2,7 @@
 Directive for fotorama
 
 # Angular Fotorama for showing image and videos(sample video, youtube video, vimeo video) all in one
-Angular-fotorama  [Demo](http://sufiiiyan.github.io/Angular-fotorama/ ) 
+Angular-fotorama  [Demo](http://sufiiiyan.github.io/angular-fotorama/ ) 
 Note: see format of data that should be provided in controller
 ---------------------------------------------------
 
