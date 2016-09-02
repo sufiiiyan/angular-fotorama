@@ -1,0 +1,33 @@
+{
+    "name": "angular-fotorama",
+    "main": "angular-fotorama.js",
+    "version": "0.0.0",
+    "homepage": "https://github.com/sufiiiyan/angular-fotorama",
+    "authors": [
+    "Sufiyan Momin <sufiyan.telsource@gmail.com>"
+  ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sufiiiyan/angular-fotorama"
+    },
+    "description": "Counting character in input box with warning and danger count",
+    "keywords": [
+    "Angular",
+    "fotorama",
+    "image",
+    "video",
+    "scroll",
+    "play video",
+    "HTML",
+    "sample video"
+  ],
+    "license": "MIT",
+    "ignore": [
+    "gh-pages",
+    "node_modules",
+    "bower_components"
+  ],
+    "dependencies": {
+    "fotorama": "4.6.4"
+  }
+}

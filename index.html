@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Angular fotorama</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/fotorama/fotorama.css">
+    <script data-require="angular.js@2.0.0-alpha.26" data-semver="1.3.15" src="https://code.angularjs.org/1.3.15/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script src="bower_components/fotorama/fotorama.js"></script>
+    <style>
+        .fotoramaDiv{
+            height: 500px;
+        }
+    
+    </style>
+
+</head>
+
+<body ng-app="fotorama">
+    <div ng-controller="MainCtrl">
+
+        <!--<div class="fotorama">
+            <img src="http://s.fotorama.io/1.jpg">
+            <img src="http://s.fotorama.io/2.jpg">
+        </div>-->
+        <div class="fotoramaDiv">
+            <div data-auto="false" fotorama item="fotoArray" class="fotorama" data-allowfullscreen="true" data-arrows="true" data-width="100%" data-ratio="800/600" data-minwidth="400" data-maxwidth="1000" data-minheight="300" data-maxheight="100%">
+
+            </div>
+        </div>
+    </div>
+
+
+
+        <script src="angular-fotorama.js"></script>
+        <script src="app.js"></script>
+</body>
+
+</html>
